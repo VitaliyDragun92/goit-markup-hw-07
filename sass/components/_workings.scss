@@ -1,0 +1,26 @@
+.section-work {
+  padding-top: 94px;
+}
+
+.list-work {
+  display: flex;
+}
+
+.title-work {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.list-work .item + .item {
+  margin-right: 30px;
+}
+
+.list-work .item {
+  width: 270px;
+  height: 101px;
+}

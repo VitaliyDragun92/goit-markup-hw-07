@@ -1,0 +1,101 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $white;
+  z-index: 2;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-up {
+  margin-right: 93px;
+  font-family: "Raleway", sans-serif;
+  color: $primary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  text-decoration: none;
+}
+
+.logo-shade {
+  color: $accent;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav,
+.auth-nav {
+  display: flex;
+}
+
+.link-menu {
+  position: relative;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary;
+}
+
+.item .accent {
+  color: #2196f3;
+}
+
+.accent::after {
+  content: "";
+  position: absolute;
+  bottom: -1%;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent;
+}
+
+.accent::after {
+  opacity: 1;
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+
+.auth-nav .link-menu {
+  color: $secondary;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
+.icon-nav {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.item .link-menu:hover,
+.item .link-menu:focus {
+  color: $accent;
+}
+
+.link-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color $duration $timming-function;
+}

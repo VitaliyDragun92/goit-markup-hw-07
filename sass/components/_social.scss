@@ -1,0 +1,33 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.item-social-networks:not(:first-child) {
+  margin-left: 10px;
+}
+
+.link-social-networks-icon {
+  display: inline-block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+
+  transition: background-color $duration $timming-function;
+}
+
+.link-social-networks-icon:hover,
+.link-social-networks-icon:focus {
+  background-color: $accent;
+  fill: $white;
+}
+
+.social-networks-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  transition: fill $duration $timming-function;
+}

@@ -1,0 +1,142 @@
+footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer-container .mailing {
+  margin-left: 93px;
+}
+
+.logo-down {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.list-contackt {
+  display: block;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.list-contackt .white {
+  color: $white;
+  text-decoration: none;
+}
+
+.list-contackt .grey {
+  color: $secondary;
+  text-decoration: none;
+}
+
+.list-contackt .link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.join {
+  margin-left: 70px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text-join {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.footer_item-social-networks {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer_item-social-networks:not(:first-child) {
+  margin-left: 10px;
+}
+
+.mailing {
+  margin-left: 93px;
+}
+
+.footer-container h2 {
+  color: $white;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form-footer {
+  display: flex;
+}
+
+.form-mail {
+  height: 50px;
+  width: 358px;
+  background-color: #2f303a;
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.btn-mail {
+  position: relative;
+  cursor: pointer;
+  color: $white;
+  background-color: $accent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
+}
+
+.icon-send {
+  position: absolute;
+  margin-left: 10px;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  fill: $white;
+}
+
+.form-mail:hover,
+.form-mail:focus {
+  outline-color: none;
+  border-color: $accent;
+}
