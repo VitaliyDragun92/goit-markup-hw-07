@@ -46,64 +46,9 @@
     <!-- ШАПКА -->
     <main>
       <section class="section-hero">
-        <div class="container overlay">
+        <div class="overlay">
           <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn" data-modal-open>Заказать услугу</button>
-        </div>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal-window">
-            <button class="modal-button" data-modal-close>
-              <svg class="modal-icon" width="30" height="30">
-                <use href="./img/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <form class="form js-speaker-form">
-              <h2>Оставьте свои данные, мы вам перезвоним</h2>
-              <div class="form-field">
-                <label for="name" class="form-label">Имя</label>
-                <input type="text" name="name" id="name" class="form-input" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required />
-                <svg class="icon-form" width="12px" height="12px">
-                  <use href="./img/sprite.svg#icon-vector1"></use>
-                </svg>
-              </div>
-
-              <div class="form-field">
-                <label for="tel" class="form-label">Телефон</label>
-                <input type="tel" name="tel" id="tel" class="form-input" pattern="^380[0-9]{9}(\s*)?$" required />
-                <svg class="icon-form" width="13px" height="13px">
-                  <use href="./img/sprite.svg#icon-vector2"></use>
-                </svg>
-              </div>
-
-              <div class="form-field">
-                <label for="mail" class="form-label">Почта</label>
-                <input
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  class="form-input"
-                  pattern="^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$"
-                  required
-                />
-                <svg class="icon-form" width="15px" height="12px">
-                  <use href="./img/sprite.svg#icon-vector3"></use>
-                </svg>
-              </div>
-              <div class="form-field comment">
-                <label for="comment" class="form-label">Комментарий</label>
-                <textarea name="comment" id="comment" rows="8" placeholder="Введите текст" class="form-input"></textarea>
-              </div>
-
-              <div class="container-checkbox">
-                <label class="checkbox-label">
-                  <input class="checkbox" type="checkbox" name="policy" /><span class="checkbox-icon"> </span> Соглашаюсь с рассылкой и принимаю
-                  <span class="policy">Условия договора</span>
-                </label>
-              </div>
-
-              <div class="btn-center"><button class="btn-send" type="submit">Отправить</button></div>
-            </form>
-          </div>
         </div>
       </section>
 
@@ -444,6 +389,56 @@
       </div>
     </footer>
 
+    <!-- MODAL WINDOW -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-icon" width="30" height="30">
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form js-speaker-form">
+          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" name="name" id="name" class="form-input" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required />
+            <svg class="icon-form" width="12px" height="12px">
+              <use href="./img/sprite.svg#icon-vector1"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-input" pattern="^380[0-9]{9}(\s*)?$" required />
+            <svg class="icon-form" width="13px" height="13px">
+              <use href="./img/sprite.svg#icon-vector2"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <input type="email" name="mail" id="mail" class="form-input" pattern="^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$" required />
+            <svg class="icon-form" width="15px" height="12px">
+              <use href="./img/sprite.svg#icon-vector3"></use>
+            </svg>
+          </div>
+          <div class="form-field comment">
+            <label for="comment" class="form-label">Комментарий</label>
+            <textarea name="comment" id="comment" rows="8" placeholder="Введите текст" class="form-input"></textarea>
+          </div>
+
+          <div class="container-checkbox">
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" name="policy" /><span class="checkbox-icon">Соглашаюсь с рассылкой и принимаю</span>
+              <a class="policy">Условия договора</a>
+            </label>
+          </div>
+
+          <div class="btn-center"><button class="btn-send" type="submit">Отправить</button></div>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script>
       ;(() => {
